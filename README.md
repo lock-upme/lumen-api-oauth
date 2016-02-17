@@ -22,6 +22,12 @@ Lumen在作为API开发的时候，access_token是验证是避免不了，我们
 	ut_member				------本地用户表
 	ut _member_users	------本地用户表与Oauth2用户表关联
 	
+	针对不同的终端提供不同的业务逻辑处理, 以用户为例：
+	
+	app/Http/Controllers/Users
+												UserController.php				不同终端入口
+												UserDeviceController.php	具体业务逻辑
+	
 #测试工具
 在网站目录下添加了一个文件夹tool，接口测试工具，是一位宝宝同事提供的~
 
