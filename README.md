@@ -8,9 +8,11 @@ Lumen在作为API开发的时候，access_token是验证是避免不了，我们
 
 安装配置的步骤参考老外文章
 
-其中要注意的是在.env 添加
-	AUTH_MODEL=App\Auth\user		-----原文章中没有此项
-	默认缓存是memcached				-----本地环境没有的话，可以改成文件缓存
+其中要注意的是在.env 配置选项
+
+	AUTH_MODEL=App\Auth\user			-----原文章中没有此项
+	
+	CACHE_DRIVER=memcached				-----本地环境没有的话，可以改成文件缓存
 	
 
 #特别说明
