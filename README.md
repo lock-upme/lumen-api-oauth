@@ -10,7 +10,7 @@ Lumen在作为API开发的时候，access_token是验证是避免不了，我们
 
 其中要注意的是在.env 配置选项
 
-	AUTH_MODEL=App\Auth\user			-----原文章中没有此项
+	AUTH_MODEL=App\Auth\User			-----原文章中没有此项
 	
 	CACHE_DRIVER=memcached				-----本地环境没有的话，可以改成文件缓存
 	
